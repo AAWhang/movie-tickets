@@ -1,0 +1,10 @@
+.poster {
+  height: 150px;
+  width: auto;
+}
+
+.otherInputs {
+  padding: 20px;
+  margin: 30px;
+  background-color: lightblue;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="purchaseTickets">
+      <div class="moviePosters">
+        <input type="radio" id="movie" name="movie" value="IMAX 3D" checked><img src="img/skeleton.jpg" class="poster">3D Skeletons watch YOU!</input>
+        <br>
+        <input type="radio" id="movie" name="movie" value="Two Headed Shark Attack: The Movie"><img src="img/sharkattack.jpg" class="poster">Two Headed Shark Attack: The Movie</input>
+        <br>
+        <input type="radio" id="movie" name="movie" value="Blowhole of the East"><img src="img/samuraidolphin.jpg" class="poster">Blowhole of the East</input>
+        <br>
+        <input type="radio" id="movie" name="movie" value="No Fossil to Call Home"><img src="img/dinoghost.jpg" class="poster">No Fossil to Call Home</input>
+        <br>
+        <input type="radio" id="movie" name="movie" value="The Ballad of Rootin' Tootin' Shootin' Larry"><img src="img/cowboypossum.jpg" class="poster">The Ballad of Rootin' Tootin' Shootin' Larry</input>
+        <br>
+      </div>
+      <div class="otherInputs">
+        <h4>Movie start time:</h4>
+        <select id="time">
+          <option value="9AM">9AM</option>
+          <option value="11AM">11AM</option>
+          <option value="2PM">2PM</option>
+          <option value="4PM">4PM</option>
+          <option value="6PM">6PM</option>
+          <option value="8PM">8PM</option>
+          <option value="10PM">10PM</option>
+        </select>
+        <br>
+        <h4>Ticket type:</h4>
+        <input type="radio" id="age" name="age" value="Child" checked>
+        Child
+        </input>
+        <br>
+        <input type="radio" id="age" name="age" value="Adult">
+        Adult
+        </input>
+        <br>
+        <input type="radio" id="age" name="age" value="Senior">
+        Senior
+        </input>
+        <br>
+        <button type="submit" class="btn-info">Submit</button>
+      </div>
+      </form>
+      <div id="table">
+        <p><span id="title"></span><br>
+          <span id="time"></span><br>
+          <span id="age"></span><br>
+          <span id="price"></span><br>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
